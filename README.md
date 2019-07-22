@@ -1,3 +1,15 @@
+## UPDATE NOTE FROM MJ:
+
+### To deploy smaller stack
+wccontent-less.yaml - deploys more efficient "short stack" with only 3 containers instead of 6. 
+
+To deploy: `docker-compose -f wccontent-less.yaml up`
+
+### Modified build script
+
+The wccontent/Dockerfile.12.2.1.0.0 file has been modified to use the mjboxboat/oracle-fmw-tooling repo instead of the original. The intention is to force the build to use the new patches for 12.2.1.3. This is WIP.
+
+
 ## Rapidly provision Oracle Fusion Middleware 12c Services
 Project to rapidly provision an Oracle Fusion Middleware environment using Docker Compose.
 
